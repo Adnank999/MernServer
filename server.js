@@ -11,6 +11,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/",(req,res)=>{
+  res.json({"message":"Server running successfully"});
+})
 app.post('/save-drawing', async (req, res) => {
   const { elements, appState } = req.body;
 
