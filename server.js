@@ -112,5 +112,5 @@ mongoose.connect(dbUri)
   .catch((err) => console.error('MongoDB connection error:', err));
 
 app.use(cors({
-    origin: 'http://localhost:3000'  
+    origin: 'http://mern-drawing-test.vercel.app'  
   }));
