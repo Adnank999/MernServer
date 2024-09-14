@@ -112,5 +112,5 @@ mongoose.connect(dbUri)
   .catch((err) => console.error('MongoDB connection error:', err));
 
 app.use(cors({
-    origin: 'http://mern-drawing-test.vercel.app'  
+    origin: 'https://mern-drawing-test.vercel.app/'  
   }));
