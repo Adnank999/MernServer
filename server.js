@@ -33,7 +33,7 @@ app.post('/save-drawing', async (req, res) => {
 });
 
 // 2. Get All Drawings
-app.get('/drawings', async (req, res) => {
+app.get('drawings', async (req, res) => {
     try {
       const drawings = await Drawing.find(); // Fetch all drawings
       res.status(200).json(drawings);
